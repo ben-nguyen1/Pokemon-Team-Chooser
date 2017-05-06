@@ -1,0 +1,57 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pokemon Team Chooser</title>
+        <meta name="Author" content=""/>
+        <link rel="stylesheet" type="text/css" href="pokemoncss.css">
+    </head>
+    <body>
+        <!-- Intro -->
+        <div class = "intro">
+            Hi, Welcome to my random pokemon team chooser tool!
+        </div>
+
+        <!-- Radio Options -->
+        <div class = "checkbox">
+            <input type="checkbox" id="starter" onClick="starter()"> Include Starter Pokemon
+            <input type="checkbox" id="legendary" onClick="legendary()"> Allow Legendarys
+            <input type="checkbox" id="final" onClick="final()"> Only Final Evolutions
+            <input type="checkbox" id="duplicates" onClick="duplicates()"> No Duplicates Allowed
+        </div>
+
+        <!-- Select Menu -->
+        <div class = "gameMenu">
+            <select id ="menu">
+                <option value="kanto">Kanto</option>
+                <option value="johto">Johto</option>
+                <option value="hoenn">Hoenn</option>
+                <option value="sinnoh">Sinnoh</option>
+                <option value="unova1">Unova (BW)</option>
+                <option value="unova2">Unova (BW2)</option>
+                <option value="kalos">Kalos</option>
+            </select>
+        </div>
+
+        <!-- Randomize Button -->
+        <div class = "getButton">
+            <input type="button" class="button" id="go" value="Get Team!" onClick="getTeam()">
+        </div>
+
+        <!-- Canvas -->
+        <div class = "canvas">
+            <canvas id="pokemon1" width="700" height="450"></canvas>
+        </div>
+
+        <div class = "footer">
+            <footer>
+                <p>Pokémon is © 1995-2015 Nintendo. Source Code Available at this <a href="https://github.com/bpn252/Pokemon-Team-Chooser">repo</a>. Made by <a href="https://www.cs.utexas.edu/~bpn252/">Ben P. Nguyen</a>
+                </p>
+            </footer>
+        </div>
+
+        <!-- Javascript -->
+        <script src="list.js"></script>
+        <script src="pokemonjs.js"></script>
+    </body>
+</html>
